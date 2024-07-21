@@ -98,7 +98,9 @@ async function update_dns(zoneName: string, subdomain: string, ip: string) {
 // https://useruser:password@xxxxx.vercel.app/api/update?ip=xxx.xxx.xxx.xxx&domain=xxxx.xxx
 export function GET(request: Request, context: RequestContext) {
   const params = new URLSearchParams(new URL(request.url).search)
-  const ip = params.get("ip") || request.headers.get("x-forwarded-for");
+  const query_ip = params.get("ip") || ""
+  const ip_regex = new RegExp("^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])$")
+  const ip = query_ip.length > 0 && ip_regex.test(query_ip) ? query_ip : request.headers.get("x-forwarded-for");
   const domain = params.get("domain") || "";
   const subdomain = domain.split(".")[0];
   const zoneName = domain.length > subdomain.length + 1 ? domain.substring(subdomain.length + 1) : "";
