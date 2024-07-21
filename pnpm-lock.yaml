@@ -1,0 +1,151 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@edge-runtime/types':
+        specifier: ^3.0.1
+        version: 3.0.1
+      '@vercel/edge':
+        specifier: ^1.1.2
+        version: 1.1.2
+      '@vercel/edge-config':
+        specifier: ^1.2.0
+        version: 1.2.0
+      edge-runtime:
+        specifier: ^3.0.1
+        version: 3.0.1
+
+packages:
+
+  '@edge-runtime/format@3.0.0':
+    resolution: {integrity: sha512-Mpg9LP4D9fxjXa6p3Wm4WnuK7XU5YKfFGvOje56ipdOvNXLj+DmLQSuX9uDbHmQ2KoJh/EYBAsmHqa+z8/wQgQ==}
+    engines: {node: '>=16'}
+
+  '@edge-runtime/ponyfill@3.0.0':
+    resolution: {integrity: sha512-JQm5QjLYv/0P6/TwOjFDBfQVNPKNCRsgP8G9sWPwKzcB5bc5mt6AMtQvMloiOm+7PosvBhGB3V448eSNGd3CTQ==}
+    engines: {node: '>=16'}
+
+  '@edge-runtime/primitives@5.0.1':
+    resolution: {integrity: sha512-qjqqCa9v3IE7Fo9OnmkIWg9l0WUu3uOfUYomuOVxaaHqlIvNI75E5IB0XNNDypz249ObRSmjRj8jLjkBUmFYYw==}
+    engines: {node: '>=16'}
+
+  '@edge-runtime/types@3.0.1':
+    resolution: {integrity: sha512-yZSWlGMQXXtpE4m1WYRpjA8V9+uU3uKHJzx9lngSYDZYYABuYxb2bICBwE1NQD0WS/u/PreP/83GcndezMFmnQ==}
+    engines: {node: '>=16'}
+
+  '@edge-runtime/vm@4.0.1':
+    resolution: {integrity: sha512-jYXrosmxlahsgLlChnSTRIfoOkcg+U+7jMEFvV5pQ9mJ7BrM2O4Kb+n/IDardpgEWZsXLBC9Y2RN7nhpuX7PTQ==}
+    engines: {node: '>=16'}
+
+  '@vercel/edge-config-fs@0.1.0':
+    resolution: {integrity: sha512-NRIBwfcS0bUoUbRWlNGetqjvLSwgYH/BqKqDN7vK1g32p7dN96k0712COgaz6VFizAm9b0g6IG6hR6+hc0KCPg==}
+
+  '@vercel/edge-config@1.2.0':
+    resolution: {integrity: sha512-ouX+hJK4KzXE31Wi2Xs7IEXb+6gImcOXgeOT9P48YKsZb7oNG2uyhvKDDkAyOJ739AnCJ5tKxavXjIoit6dWtw==}
+    engines: {node: '>=14.6'}
+    peerDependencies:
+      '@opentelemetry/api': ^1.7.0
+    peerDependenciesMeta:
+      '@opentelemetry/api':
+        optional: true
+
+  '@vercel/edge@1.1.2':
+    resolution: {integrity: sha512-wt5SnhsMahWX8U9ZZhFUQoiXhMn/CUxA5xeMdZX1cwyOL1ZbDR3rNI8HRT9RSU73nDxeF6jlnqJyp/0Jy0VM2A==}
+
+  async-listen@3.0.1:
+    resolution: {integrity: sha512-cWMaNwUJnf37C/S5TfCkk/15MwbPRwVYALA2jtjkbHjCmAPiDXyNJy2q3p1KAZzDLHAWyarUWSujUoHR4pEgrA==}
+    engines: {node: '>= 14'}
+
+  convert-hrtime@3.0.0:
+    resolution: {integrity: sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==}
+    engines: {node: '>=8'}
+
+  edge-runtime@3.0.1:
+    resolution: {integrity: sha512-N2QwOpv2y6ju9WvQSCebLz/Ce8qMBVoqnFbrtgRbZXBCaASmko/SpvFQ1de95hepaUw2XGxZS8rSoLFwpJZMCA==}
+    engines: {node: '>=16'}
+    hasBin: true
+
+  mri@1.2.0:
+    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
+    engines: {node: '>=4'}
+
+  parse-ms@2.1.0:
+    resolution: {integrity: sha512-kHt7kzLoS9VBZfUsiKjv43mr91ea+U05EyKkEtqp7vNbHxmaVuEqN7XxeEVnGrMtYOAxGrDElSi96K7EgO1zCA==}
+    engines: {node: '>=6'}
+
+  picocolors@1.0.1:
+    resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
+
+  pretty-ms@7.0.1:
+    resolution: {integrity: sha512-973driJZvxiGOQ5ONsFhOF/DtzPMOMtgC11kCpUrPGMTgqp2q/1gwzCquocrN33is0VZ5GFHXZYMM9l6h67v2Q==}
+    engines: {node: '>=10'}
+
+  signal-exit@4.0.2:
+    resolution: {integrity: sha512-MY2/qGx4enyjprQnFaZsHib3Yadh3IXyV2C321GY0pjGfVBu4un0uDJkwgdxqO+Rdx8JMT8IfJIRwbYVz3Ob3Q==}
+    engines: {node: '>=14'}
+
+  time-span@4.0.0:
+    resolution: {integrity: sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==}
+    engines: {node: '>=10'}
+
+snapshots:
+
+  '@edge-runtime/format@3.0.0': {}
+
+  '@edge-runtime/ponyfill@3.0.0': {}
+
+  '@edge-runtime/primitives@5.0.1': {}
+
+  '@edge-runtime/types@3.0.1':
+    dependencies:
+      '@edge-runtime/primitives': 5.0.1
+
+  '@edge-runtime/vm@4.0.1':
+    dependencies:
+      '@edge-runtime/primitives': 5.0.1
+
+  '@vercel/edge-config-fs@0.1.0': {}
+
+  '@vercel/edge-config@1.2.0':
+    dependencies:
+      '@vercel/edge-config-fs': 0.1.0
+
+  '@vercel/edge@1.1.2': {}
+
+  async-listen@3.0.1: {}
+
+  convert-hrtime@3.0.0: {}
+
+  edge-runtime@3.0.1:
+    dependencies:
+      '@edge-runtime/format': 3.0.0
+      '@edge-runtime/ponyfill': 3.0.0
+      '@edge-runtime/vm': 4.0.1
+      async-listen: 3.0.1
+      mri: 1.2.0
+      picocolors: 1.0.1
+      pretty-ms: 7.0.1
+      signal-exit: 4.0.2
+      time-span: 4.0.0
+
+  mri@1.2.0: {}
+
+  parse-ms@2.1.0: {}
+
+  picocolors@1.0.1: {}
+
+  pretty-ms@7.0.1:
+    dependencies:
+      parse-ms: 2.1.0
+
+  signal-exit@4.0.2: {}
+
+  time-span@4.0.0:
+    dependencies:
+      convert-hrtime: 3.0.0

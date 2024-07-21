@@ -1,0 +1,19 @@
+{
+  "name": "Hetzner-DNS-Update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api/main.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@edge-runtime/types": "^3.0.1",
+    "@vercel/edge": "^1.1.2",
+    "@vercel/edge-config": "^1.2.0",
+    "edge-runtime": "^3.0.1"
+  }
+}
